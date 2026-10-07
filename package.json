@@ -1,0 +1,21 @@
+{
+  "name": "reqres-api-tests",
+  "version": "1.0.0",
+  "description": "API test framework: TypeScript + Playwright against ReqRes.in",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:users": "playwright test tests/users.spec.ts",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  }
+}
